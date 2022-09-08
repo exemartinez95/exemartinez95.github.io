@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    color: white ;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-p {
+    width: 600px;
+}
+
+.container a {
+    font-size: 120px;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 80px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.photo1 {
+    height: 550px;
+    display: flex;
+    position: relative;
+    top: 25px;
+    right: 200px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#hello:after {
+    content: "Hello";
+    color: darkred
+}
+
+#hello:hover {
+    color: darkred;
+}
+
+#hello:hover:after {
+    content: "About";
+   
+}
+
+#iam:after {
+    content: "I am";
+    color: white;
+}
+
+#iam:hover::after {
+    content: "Works";
+    color: white;
+}
+
+#exequiel {
+    z-index: 1;
+}
+
+#exequiel:after {
+    content: "Exequiel";
+    color: darkslateblue;
+}
+#exequiel:hover:after {
+    content: "Contact";
+    color: darkslateblue;
+}
+
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.on-hover--40:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+
+

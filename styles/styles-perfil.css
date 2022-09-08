@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+/* first section  */
+header {
+    width: 100%;
+    display: flex;
+}
+.title-principal {
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 20%;
+    font-size: 60px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.title-principal:hover {
+    color: darkred;
+}
+
+/* second section*/
+img {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Rubik Dirt', cursive;
+}
+.container-2 {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    position: fixed;
+    left: 70%;
+    top: 200px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+a:hover {
+    color: darkred
+}
+
+a:hover:after {
+    content: ".Back"
+}
+/* third section */
+
+.container-3{
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+    width: 60%;
+    
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    top: 50px;
+    left: 250px;
+    margin-left: 30px;
+}
+
+
+.parrafo {
+    color: white;
+    position: relative;
+    top: 100px;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 30px;
+   
+}
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
