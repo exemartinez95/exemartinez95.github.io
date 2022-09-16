@@ -41,7 +41,7 @@ a {
 }
 
 #hello:after {
-    content: "Hello";
+    content: "Hola";
     color: darkred
 }
 
@@ -50,17 +50,17 @@ a {
 }
 
 #hello:hover:after {
-    content: "About";
+    content: "Yo";
    
 }
 
 #iam:after {
-    content: "I am";
+    content: "Soy";
     color: white;
 }
 
 #iam:hover::after {
-    content: "Works";
+    content: "Trabajos";
     color: white;
 }
 
@@ -73,7 +73,7 @@ a {
     color: darkslateblue;
 }
 #exequiel:hover:after {
-    content: "Contact";
+    content: "Contacto";
     color: darkslateblue;
 }
 

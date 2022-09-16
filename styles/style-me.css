@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Rubik Dirt', cursive;
+    color: white;
 }
 
 body {
@@ -42,6 +43,45 @@ div {
 .link {
     color: white;
     text-decoration: none;
+}
+
+.container-2 {
+    margin-top: 250px;
+    margin-left: 200px;
+    width: 600px;
+    position: relative;
+   
+}
+
+h2 {
+    margin: 50px
+}
+
+
+
+.img-github {
+    width: 70px;
+   
+}
+
+.github {
+    position: relative;
+    left: 50px;
+}
+
+.img-github:hover {
+    transform: scale(1.5);
+}
+
+.img-logo {
+    width: 70px;
+    margin: 20px 50px;
+    position: relative;
+    left: 100px;
+}
+
+.img-logo:hover {
+    transform: scale(1.5);
 }
 
 .back {
