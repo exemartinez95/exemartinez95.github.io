@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Rubik Dirt', cursive;
     color: white;
 }
 
 body {
     background-color: black;
+    font-family: 'Cabin', sans-serif;
 }
 
 /*container1 -- page yo */ 
@@ -14,35 +14,58 @@ body {
 .container-1 {
     position: relative;
     display: flex;
-    width: 400px;
+    width: 500px;
     left: 200px;
     top: 200px;
     flex-wrap: wrap;
 }
 
+.title-principal {
+    position: relative;
+    top: 100px;
+    left: 20%;
+    font-size: 60px;
+}
+
+.title-principal:hover {
+    color: darkgray;
+}
+
 div {
     color: white;
     font-size: 25px;
-    margin: 30px 10px;
-    width: 350px;
+    margin: 50px 10px;
+    width: 400px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.work-title {
+    font-size: 50px;
+}
 .work {
     background-color: black;
     
 }
 
-.work:hover {
-    transform: scale(1.3);
+.work{
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
+.work:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.work:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
 
 .link {
     color: white;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .container-2 {
@@ -50,18 +73,19 @@ div {
     margin-left: 200px;
     width: 600px;
     position: relative;
-   
 }
+
 
 h2 {
-    margin: 50px
+    margin: 50px;
+    color: darkgray;
+    position: relative;
+    font-size: 30px;
+    left: 25px;
 }
-
-
 
 .img-github {
     width: 70px;
-   
 }
 
 .github {
@@ -74,13 +98,26 @@ h2 {
 }
 
 .img-logo {
-    width: 70px;
-    margin: 20px 50px;
+    margin: 20px 60px;
     position: relative;
     left: 100px;
 }
 
+.img-logo-ts {
+    margin: 20px 30px;
+    position: relative;
+    left: 100px;
+}
+
+.img {
+    width: 70px;
+}
+
 .img-logo:hover {
+    transform: scale(1.5);
+}
+
+.img-logo-ts:hover {
     transform: scale(1.5);
 }
 
@@ -91,7 +128,6 @@ h2 {
     top: 200px;
     color: white;
     font-size: 20px;
-    font-family: 'Rubik Dirt', cursive;
 }
 
 .back:hover {
@@ -99,7 +135,12 @@ h2 {
 }
 
 .back:hover:after {
-    content: ".Back"
+    content: ".Volver"
+}
+
+.final-space {
+    height: 200px;
+    margin-top: 150px;
 }
 
 .animate {

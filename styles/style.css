@@ -5,6 +5,7 @@
 
 body {
     background-color: black;
+    font-family: 'Cabin', sans-serif;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
     position: relative;
     top: 100px;
     left: 80px;
-    font-family: 'Rubik Dirt', cursive;
+    
 }
 
 .photo1 {
