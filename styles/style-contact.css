@@ -5,6 +5,7 @@
 
 body {
     background-color: black;
+    font-family: 'Cabin', sans-serif;
 }
 
 header {
@@ -13,24 +14,23 @@ header {
     width: 100%;
 }
 
-a {
+.back {
     text-decoration: none;
     position: fixed;
     left: 70%;
     top: 200px;
     color: white;
     font-size: 20px;
-    font-family: 'Rubik Dirt', cursive;
 }
 
 /*  hover a */
 
-a:hover {
+.back:hover {
     color: darkblue;
 }
 
-a:hover:after {
-    content: ".Back";
+.back:hover:after {
+    content: ".Volver";
 }
 
 .parrafo1 {
@@ -39,35 +39,87 @@ a:hover:after {
     font-size: 50px;
     position: relative;
     color: white;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Cabin', sans-serif;
+}
+
+.parrafo1:hover {
+    color: darkblue;
 }
 
 /* second section*/
 
 .container {
     position: relative;
-    display: flex;
-    width: 60%;
+    display: inline-block;
+    width: 600px;
     margin-top: 350px;
-    left: 10%;
+    left: 250px;
 }
 
 h1 {
     position: relative;
     color: white;
-    left: 200px;
-    font-family: 'Rubik Dirt', cursive;
+    left: -50px;
+    font-family: 'Cabin', sans-serif;
 }
 
 .parrafo2 {
     color: white;
     font-size: 30px;
     position: relative;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Cabin', sans-serif;
     top: 50px;
     left: -100px;
 }
 
+.mail {
+    position: relative;
+    display: flex;
+    top: 100px;
+    right: 50px;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* copiar mail al portapeles  */
+
+.copy {
+	cursor: pointer;
+}
+.copy:after{
+    content:"dexequielmartinez@gmail.com";
+}
+.copy:hover:after{
+	content:"Copiar al portapapeles";
+}
+.copy:hover:active:after {
+    content:"Email copiado";
+}
+
+/**/
+
+.final-space {
+    height: 200px;
+    margin-top: 150px;
+}
+
+.mail:hover {
+    color: darkblue
+}
+
+.move{
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.move:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.move:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
 
 /*  animation   */
 
